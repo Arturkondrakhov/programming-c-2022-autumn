@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 
 	std::cout << num;
 
-	free(a);
+	delete(a);
 
 	return EXIT_SUCCESS;
 }

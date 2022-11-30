@@ -16,6 +16,7 @@ int main(int argc, char* argv[])
 	{
 		std::cin >> arr[i];
 	}
+
 	std::cin >> L >> R;
 
 	for (int i = L - 1; i < R; ++i)
@@ -26,9 +27,10 @@ int main(int argc, char* argv[])
 			ind = ++i;
 		}
 	}
+
 	std::cout << max << "  " << ind;
 
-	free(arr);
+	delete(arr);
 
 	return EXIT_SUCCESS;
 }

@@ -24,9 +24,10 @@ int main(int argc, char* argv[])
 			++cnt;
 		}
 	}
+
 	std::cout << cnt << std::endl;
 	
-	free(arr);
+	delete(arr);
 
 	return EXIT_SUCCESS;
 }

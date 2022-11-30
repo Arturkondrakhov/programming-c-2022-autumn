@@ -6,6 +6,7 @@ int main(int argc, char* argv[])
 	int max = 0;
 
 	std::cin >> n;
+
 	int* arr = new int[n] {0};
 
 	for (int i = 0; i < n; ++i)
@@ -19,9 +20,10 @@ int main(int argc, char* argv[])
 			max = arr[i % n] + arr[(i + 1) % n] + arr[(i + 2) % n];
 		}
 	}
-		std::cout << max;
 
-		free(arr);
+	std::cout << max;
+
+	delete(arr);
 
 	return EXIT_SUCCESS;
 }

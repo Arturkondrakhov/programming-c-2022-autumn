@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	free(arr);
+	delete(arr);
 
 	return EXIT_SUCCESS;
 }
