@@ -16,7 +16,6 @@ int* f(int x, int y, int* arr)
 		return f(++x, y, arr);
 	}
 }
-
 int main(int argc, char* argv[])
 {
 	int n = 0;
