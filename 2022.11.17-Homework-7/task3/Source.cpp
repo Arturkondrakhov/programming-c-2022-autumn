@@ -31,6 +31,10 @@ int main(int argc, char* argv[])
 		std::cout << std::endl;
 	}
 
+	for (int i = 0; i < n; ++i)
+	{
+		delete[] arr[i];
+	}
 	delete[] arr;
 
 	return EXIT_SUCCESS;

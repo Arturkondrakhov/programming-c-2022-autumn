@@ -49,6 +49,8 @@ int main(int argc, char* argv[])
 	std::cout << yn;
 
 	delete[]arr;
+	delete[]three;
+	delete[]four;
 
 
 	return EXIT_SUCCESS;
